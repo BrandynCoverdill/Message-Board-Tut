@@ -9,8 +9,6 @@ import { newRouter } from './routes/new.js';
 // Config .env file
 dotenv.config();
 
-console.log(process.env.PORT);
-
 // Create instance of Express
 const app = express();
 
