@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= title %></title>
+	</head>
+	<body>
+		<h1><%= title %></h1>
+		<div style="margin-block: 1em">
+			<a href="/">View Messages</a>
+		</div>
+		<div>
+			<form
+				action="/new"
+				method="post"
+				style="display: flex; flex-direction: column; gap: 1em"
+			>
+				<input type="text" name="user" id="user" placeholder="Your name" />
+				<textarea name="text" id="text" rows="10"></textarea>
+				<button type="submit">Add Message</button>
+			</form>
+		</div>
+	</body>
+</html>
